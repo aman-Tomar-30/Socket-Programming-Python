@@ -7,7 +7,7 @@ import subprocess
 
 s = socket.socket()
 host = 'xxx.xxx.xxx.xxx'  #give ip of server
-port = 9999
+port = 5000
 
 s.connect((host, port))
 #print("Connection Done")

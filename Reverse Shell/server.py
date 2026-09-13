@@ -18,6 +18,9 @@ def create_socket():
     except socket.error as msg:
         print(f"Error: {msg}")
 
+    except OSError as err:
+        print(err)
+
 # Binding the socket and listening for connections
 def bind_socket():
     try:
